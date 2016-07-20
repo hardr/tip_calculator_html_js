@@ -3,8 +3,17 @@ $(document).ready(function() {
 
 });
 
-$('form').submit(function(event) {
+$('.form1').submit(function(event) {
   event.preventDefault();
-  var tip = ($('.bill').val() * .2).toFixed(2);
-  $('.results').append('<h2>You should tip $' + tip + '</h2>');
+  var tip = ($('.input1').val() * .2).toFixed(2);
+  $('.results1').append('<h2>You should tip $' + tip + '</h2>');
+})
+
+$('.form2').submit(function(event) {
+  event.preventDefault();
+  var bill = $('.input2').val();
+
+  var tip = (bill.replace('$', '') * .20).toFixed(2);
+
+  $('.results2').append('<h2>You should tip $' + tip + '</h2>');
 })
