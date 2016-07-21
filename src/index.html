@@ -23,7 +23,7 @@
 
     <form class="form2 form-group">
       <fieldset class="form-group">
-        <input class="input2"type="text" name="total" placeholder="enter an amount.." min="0">
+        <input class="input2" type="text" name="total" placeholder="enter an amount..">
       </fieldset>
       <button>Calculate Tip</button>
     </form>
@@ -34,7 +34,16 @@
 
     <form class="form3 form-group">
       <fieldset class="form-group">
-        <input class="input2"type="text" name="total" placeholder="enter an amount.." min="0">
+        <input class="input3" type="text" name="total" placeholder="enter an amount..">
+      </fieldset>
+      <fieldset class="form-group">
+        <select class="tipAmount" name="tipAmount">
+          <option value="0.50" selected hidden>How good?</option>
+          <option value="0.15">15%</option>
+          <option value="0.20">20%</option>
+          <option value="0.25">25%</option>
+          <option value="0.10">Shameful</option>
+        </select>
       </fieldset>
       <button>Calculate Tip</button>
     </form>
